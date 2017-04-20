@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The Adventurers Guild">
+    <meta name="author" content="Daniel Quinn">
+    <title>The Adventurers Guild - Videos Page</title>
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css" media="all">
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Architects+Daughter|Bangers|BenchNine|Covered+By+Your+Grace|Shadows+Into+Light|Shadows+Into+Light+Two');
+    </style>
+    <!-- js -->
+    <script src="https://use.fontawesome.com/a918be0e46.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script>
+        $(document).ready(
+          function(){
+            $("#nav-mobile").html($("#nav-main").html());
+            $("#nav-trigger span").click(function(){
+                if ($("nav#nav-mobile ul").hasClass("expanded")) {
+                    $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+                    $(this).removeClass("open");
+                } else {
+                    $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+                    $(this).addClass("open");
+                }
+            });
+        });
+    </script>
+  </head>
+
+<!--Navbar-->
+
+<body>
+  <div class="page-wrap">
+    <div id="container">
+       <div id="header">
+          <div id="title">
+            <h1> Deadmau5 </h1>
+          </div>
+         <div id="main">
+             <div class="container">
+                 <div id="nav-trigger">
+                     <span>Menu</span>
+                 </div>
+                 <nav id="nav-main">
+                     <ul>
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="about.html">About</a></li>
+                         <li><a href="gallery.html">Gallery</a></li>
+                         <li><a href="videos.html">Videos</a></li>
+                         <li><a href="contact.html">Contact</a></li>
+                     </ul>
+                 </nav>
+                 <nav id="nav-mobile"></nav>
+               </div>
+         </div>
+       </div>
+     </div>
+
+<!-- Content -->
+
+  <div class="main-content">
+    <p>
+    <img src="img/D1.jpg" align="left"  alt="Deadmau5 Flamethrower" style="width:50%;height:25%;">
+    <div class="subhead">Who is Deadmau5</div>
+    <br>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur tincidunt eros non pulvinar. Maecenas ultricies gravida odio, sed hendrerit ex tempor vitae. Nulla vitae iaculis sapien, elementum pellentesque mauris. Cras nulla ex, accumsan sit amet est sed, imperdiet consequat erat. Donec finibus sem quam, vitae dapibus diam tristique et. Donec blandit velit in orci dictum facilisis. Fusce ac posuere elit, in eleifend quam. Sed condimentum condimentum neque vitae rhoncus. Aenean malesuada arcu eget felis posuere molestie. Duis vestibulum viverra euismod. Aenean ex leo, fermentum in massa eget, volutpat scelerisque metus. Donec accumsan nulla velit.
+    </p>
+  </div>
+</div>
+
+<br>
+</body>
+
+<footer class="flex-rw">
+  <section class="footer-social-section flex-rw">
+      <span class="footer-social-overlap footer-social-connect">
+      Connect With Deadmau5
+      </span>
+      <span class="footer-social-overlap footer-social-icons-wrapper">
+      <a href="https://www.facebook.com/deadmau5" class="generic-anchor" target="_blank" title="Facebook" itemprop="significantLink"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/deadmau5" class="generic-anchor" target="_blank" title="Twitter" itemprop="significantLink"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.instagram.com/deadmau5/?hl=en" class="generic-anchor" target="_blank" title="Instagram" itemprop="significantLink"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.youtube.com/user/deadmau5" class="generic-anchor" target="_blank" title="Youtube" itemprop="significantLink"><i class="fa fa-youtube"></i></a>
+      </span>
+  </section>
+  <section class="footer-bottom-section flex-rw">
+<div class="footer-bottom-wrapper">
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"></a>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+</div>
+    <div class="footer-bottom-wrapper">
+    <p>Daniel Quinn | YooBee iCreate 17CCIC01 | Web Development</p>
+      </div>
+  </section>
+</footer>
+
+</html>
